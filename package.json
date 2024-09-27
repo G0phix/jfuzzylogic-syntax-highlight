@@ -1,0 +1,25 @@
+{
+  "name": "jfuzzylogic-syntax-highlight",
+  "displayName": "jFuzzyLogic Syntax Highlight",
+  "description": "Syntax Highlighning for jFuzzyLogic",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fuzzy",
+      "aliases": ["jFuzzyLogic", "fuzzy"],
+      "extensions": [".fcl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fuzzy",
+      "scopeName": "source.fcl",
+      "path": "./syntaxes/fuzzy.tmLanguage.json"
+    }]
+  }
+}
